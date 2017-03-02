@@ -48,7 +48,6 @@ HttpSession session =  request.getSession(true);
 		HttpSession sesion = request.getSession();
         String nombre;
         nombre = request.getParameter("nombre");
-        sesion.getAttribute("contador");
         sesion.setAttribute("contador", 0);
         
         if(sesion.getAttribute("nombre") == null)
